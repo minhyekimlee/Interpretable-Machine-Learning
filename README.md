@@ -1,4 +1,4 @@
-# RMLassignment1
+# Responsible Machine Learning
 Interpretable Machine Learning Models
 
 Assignment package includes interpretable machine learning models to predict Binary target: whether (1) or not (0) the annual percentage rate (APR) charged for a mortgage is
