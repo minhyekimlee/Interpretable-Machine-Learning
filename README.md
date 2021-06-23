@@ -2,7 +2,7 @@
 
 ### *Team Information*
 
-Members
+GWU Student Members
 * Zach Vila (zrvila)
 * Minhye Kim (minhyekimlee)
 * Tivon Johnson (tivonj)
@@ -12,14 +12,9 @@ Members
 Our group has developed interpretable machine learning models as a part of our semester project in the Responsible Machine Learning class taught by Professor Hall during the Summer Semester in 2021. We have used Home Mortgage Disclosure Act historic mortgage reporting data to predict the probability of applicants being charged a higher rate for their mortgages. In order to address growing concerns on risks of black box machine learning models deployed to highly impactful social areas without much needed contemplation and precaution on adverse effects, we demonstrate available techniques to interpret and explain predictive models to prevent unjust discrimination, improve security and encourage ethical decisions.
 
 ### Basic Information
-* Person or organization developing model
-  * Group 5
-* Model date
-  * June 2021
-* Model version
-  * Ver 1.0
-* Model type
-  * EBM, MGBM, Ensenble 
+* Model date: June 2021
+* Model version: 1.0
+* Model types: EBM, MGBM, Ensenble 
 * Information about training algorithms, parameters, fairness constraints or other applied approaches, and features
 * Paper or other resource for more information
 * Citation details
@@ -55,13 +50,13 @@ If such detail is not possible, minimal allowable information
 should be provided here, such as details of the distribution
 over various factors in the training datasets.
 
-## Quantitative Analyses
+## Quantitative Analysis
 * Unitary results:
   * Our best remediated EBM model produced an AUC of **0.7804** after employing sevral post-processing techniques such as removing outliers and sensitivity analysis to economic recession conditions. 100 model iterations were trained on the data utilizing a 70/30% training/validation split.
   Best training/validation AUC (pre-remediation): **0.8247**
 * Intersectional results:
   * Among the models explored (Ensemble, GML, MGBM, EBM) we found that the EBM model produced the greatest fidelity to the true outcomes. We compared AUC results to evaluate the  models independently, and once we determined the superiority of the EBM class model, we continued on to remediation techniques.
-* Visualizations
+### Visualizations
 
 ![Partial Dependence Plots](/img/pdps.png)
 ![Partial Dependence Plots](/img/pdps2.png)
