@@ -1,6 +1,6 @@
 # Model Card
 
-## *Team Information*
+### *Team Information*
 
 Members
 * Zach Vila (zrvila)
