@@ -64,10 +64,8 @@ over various factors in the training datasets.
 * Visualizations
 
 ![Partial Dependent Plots](/img/pdps.pdf)
-Format: ![Alt Text](url)
 
 ![Global Variable Importance](/img/global_features.png)
-Format: ![Alt Text](url)
 
 ## Ethical Considerations
 * Although we use the 4/5ths rule, one should aim for full parity where possible in a machine learning model (i.e. 1 to 1 parity in classification)
