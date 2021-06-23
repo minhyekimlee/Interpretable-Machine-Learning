@@ -56,11 +56,11 @@ should be provided here, such as details of the distribution
 over various factors in the training datasets.
 
 ## Quantitative Analyses
-* Unitary results 
-  Our best remediated EBM model produced an AUC of **0.7804** after employing sevral post-processing techniques such as removing outliers and sensitivity analysis to economic recession conditions. 100 model iterations were trained on the data utilizing a 70/30% training/validation split.
+* Unitary results:
+  * Our best remediated EBM model produced an AUC of **0.7804** after employing sevral post-processing techniques such as removing outliers and sensitivity analysis to economic recession conditions. 100 model iterations were trained on the data utilizing a 70/30% training/validation split.
   Best training/validation AUC (pre-remediation): **0.8247**
-* Intersectional results
-  Among the models explored (Ensemble, GML, MGBM, EBM) we found that the EBM model produced the greatest fidelity to the true outcomes. We compared AUC results to evaluate the  models independently, and once we determined the superiority of the EBM class model, we continued on to remediation techniques.
+* Intersectional results:
+  * Among the models explored (Ensemble, GML, MGBM, EBM) we found that the EBM model produced the greatest fidelity to the true outcomes. We compared AUC results to evaluate the  models independently, and once we determined the superiority of the EBM class model, we continued on to remediation techniques.
 * Visualizations
 
 ![Partial Dependence Plots](/img/pdps.png)
