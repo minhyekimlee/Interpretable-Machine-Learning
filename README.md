@@ -63,7 +63,7 @@ over various factors in the training datasets.
   Among the models explored (Ensemble, GML, MGBM, EBM) we found that the EBM model produced the greatest fidelity to the true outcomes. We compared AUC results to evaluate the  models independently, and once we determined the superiority of the EBM class model, we continued on to remediation techniques.
 * Visualizations
 
-![Partial Dependent Plots](/img/pdps.pdf)
+![Partial Dependent Plots](/img/pdps.png)
 
 ![Global Variable Importance](/img/global_features.png)
 
