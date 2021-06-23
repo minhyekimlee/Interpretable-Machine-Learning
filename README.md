@@ -18,7 +18,7 @@ Our group has developed interpretable machine learning models as a part of our s
 * Information about training algorithms, parameters, fairness constraints or other applied approaches, and features
 * Paper or other resource for more information
 * Citation details
-* ![License](https://github.com/zrvila/Interpretable-Machine-Learning/blob/main/LICENSE)
+* [License](https://github.com/zrvila/Interpretable-Machine-Learning/blob/main/LICENSE)
 * Where to send questions or comments about the model
 
 ## Intended Use
