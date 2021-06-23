@@ -77,7 +77,6 @@ over various factors in the training datasets.
 ## Caveats and Recommendations
 * See 4/5ths Rule: https://www.prevuehr.com/resources/insights/adverse-impact-analysis-four-fifths-rule/
 * This model card does not consitute legal advice
-
-*Further exploration is warranted for our models, but we provide a baseline here*
+* Further exploration is warranted for our models, but we provide a baseline here
 
 *All models are wrong, but some are useful* - George E. P. Box
