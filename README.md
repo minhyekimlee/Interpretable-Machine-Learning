@@ -92,5 +92,9 @@ Global Model Variable Importance:
 * See 4/5ths Rule: https://www.prevuehr.com/resources/insights/adverse-impact-analysis-four-fifths-rule/
 * This model card does not consitute legal advice
 * Further exploration is warranted for our models, but we provide a baseline here
+* Additional Reading
+  *[Interpretable Models](https://originalstatic.aminer.cn/misc/pdf/Molnar-interpretable-machine-learning_compressed.pdf#:~:text=Interpretable%20Machine%20Learning%20refers%20to%20methods%20and%20models,that%20make%20the%20behavior%20and%20predictionsofmachinelearningsystemsunderstandabletohumans.%20ADatasetisatablewiththedatafromwhichthemachinelearns.Thedatasetcontainsthefeatures%20andthetargettopredict.Whenusedtoinduceamodel%2Cthedatasetiscalledtrainingdata.)
+  *["Black Boxes"](https://y-sbm.com/blog/black-box-in-machine-leraning)
+  *[Discimination in algorithms](https://www.brookings.edu/research/auditing-employment-algorithms-for-discrimination/)
 
 *All models are wrong, but some are useful* - George E. P. Box
