@@ -31,7 +31,7 @@ Our group has developed interpretable machine learning models as a part of our s
 * Primary intended users
   * The primary users of this model are professors, students, and researchers of interpretable machine learning models.
 * Out-of-scope use cases
-  * Xxx
+  * This model is for educational purposes and not intended to evaluate real-world credit worthiness.
 
 ## Factors
 
