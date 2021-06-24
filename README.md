@@ -49,7 +49,6 @@ Our group has developed interpretable machine learning models as a part of our s
 * Variation approaches
   * Our EBM model Grid search runs through 100 iterations
   * We split our data by 70/30% training/validation
-  * 
 ## Evaluation Data
 ### Details on the dataset(s) used for the quantitative analyses in the card.
 * Datasets
