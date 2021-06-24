@@ -73,13 +73,15 @@ over various factors in the training datasets.
   * Among the models explored (Ensemble, GML, MGBM, EBM) we found that the EBM model produced the greatest fidelity to the true outcomes. We compared AUC results to evaluate the  models independently, and once we determined the superiority of the EBM class model, we continued on to remediation techniques.
 ### Visualizations
 
-Partial Dependence Plots:
+**Partial Dependence Plots:**
+The partial dependence plot (short PDP or PD plot) shows the "marginal effect one or two features have on the predicted outcome of a machine learning model" (J. H. Friedman 2001).
 
 ![Partial Dependence Plots](/img/pdps.png)
 ![Partial Dependence Plots](/img/pdps2.png)
 ![Partial Dependence Plots](/img/pdps3.png)
 
-Global Model Variable Importance:
+**Global Model Variable Importance:**
+Global variable importance values give an indication of the magnitude of a variable’s contribution to model predictions for all of the data.
 
 ![Global Variable Importance](/img/global_features.png)
 
