@@ -31,9 +31,9 @@ Our group has developed interpretable machine learning models as a part of our s
 ## Intended Use
 
 * Primary intended uses
-  * The primary intended use is to provide an interpretable machine learning model that help explain predictions as opposed to black box models which provide little, if any, explanation. Such transparency may help prevent bias and discrimination that can occur with black-box models as it relates to applicants with higher mortgage rates.
+  * The primary intended use is to provide an interpretable machine learning model that helps explain predictions as opposed to black box models which provide little, if any, explanation. Such transparency may help prevent bias and discrimination that can occur with black-box models as it relates to applicants with higher mortgage rates.
 * Primary intended users
-  * The primary users of this model are professors, students, and researchers of interpretable machine learning models.
+  * The primary intended users of this model are professors, students, and researchers of interpretable machine learning models.
 * Out-of-scope use cases
   * This model is for educational purposes and not intended to evaluate real-world credit worthiness.
 
