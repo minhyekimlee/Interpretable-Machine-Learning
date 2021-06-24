@@ -20,12 +20,16 @@ Our group has developed interpretable machine learning models as a part of our s
 * Citation details
 * [License](https://github.com/zrvila/Interpretable-Machine-Learning/blob/main/LICENSE)
 * Where to send questions or comments about the model
+  * Please refer to “Team Information” section.
 
 ## Intended Use
 ### Use cases that were envisioned during development.
 * Primary intended uses
+  * The primary intended use is to provide interpretable machine learning models that help explain predictions as opposed to black box models which provide little, if any, explanation. Such transparency may help prevent bias and discrimination that can occur with black-box models as it relates to applicants with higher mortgage rates.
 * Primary intended users
+  * The primary users of these models are professors, students, and researchers of interpretable machine learning models.
 * Out-of-scope use cases
+  * Explainable Boosting Machines (EBM) are part of the Generalized Additive Models (GAM) family, which, due to their limited ability to learn high-order interactions between features, are significantly less flexible than most black-box machine learning models.
 
 ## Factors
 ### Factors could include demographic or phenotypic groups, environmental conditions, technical attributes, or others listed in Section 4.3.
