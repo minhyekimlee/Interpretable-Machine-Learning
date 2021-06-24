@@ -30,13 +30,17 @@ Our group has developed interpretable machine learning models as a part of our s
 ## Factors
 ### Factors could include demographic or phenotypic groups, environmental conditions, technical attributes, or others listed in Section 4.3.
 * Relevant factors
+  *
 * Evaluation factors
-
+  *
 ## Metrics
 ### Metrics should be chosen to reflect potential realworld impacts of the model.
 * Model performance measures
+  *
 * Decision thresholds
+  *
 * Variation approaches
+  *
 
 ## Evaluation Data
 ### Details on the dataset(s) used for the quantitative analyses in the card.
