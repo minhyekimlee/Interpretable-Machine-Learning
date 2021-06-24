@@ -9,6 +9,7 @@ GWU Student Members
 * Qunzhe Ding (dingqunzhe1222)
 
 ## Model Details
+
 Our group has developed interpretable machine learning models as a part of our semester project in the Responsible Machine Learning class taught by Professor Hall during the Summer Semester in 2021. We have used Home Mortgage Disclosure Act historic mortgage reporting data to predict the probability of applicants being charged a higher rate for their mortgages. In order to address growing concerns on risks of black box machine learning models deployed to highly impactful social areas without much needed contemplation and precaution on adverse effects, we demonstrate available techniques to interpret and explain predictive models to prevent unjust discrimination, improve security and encourage ethical decisions.
 
 ### Basic Information
@@ -37,9 +38,9 @@ Our group has developed interpretable machine learning models as a part of our s
 * Relevant factors
   * Since our project goal is to determine if the annual percentage rate (APR) charged for a mortgage is High-priced(or not), which we consider as one of many issues that perpetuates a massive disparity in overall wealth between different demographic groups in the US. As a result, a demographic factor that if a mortgage is belonging to a white or minority(black, asian, latin...) family should be include, and we supposed that white family are more likely to get a low-priced mortgage and minority family are more likely to get a High-priced mortgage.    
   * From our common sense, a high-amount and long-period mortgage usually result in a comparetively higher APR(since the financial institutions are correspondingly taking on more risk), so we thought high-amount and long-period mortgage are two foreseeable salient factors could make our model performance vary.
-
 * Evaluation factors
   * Accoring to our dataset, the factors that if the mortage is high-priced are being reported(showed as loan amount std), the reason why was these chosen is because it is a imporant features of the mortgage. According to our feature importance,the loan amount is 4th importance toward our preditive object. 
+
 ## Metrics
 
 * Model performance measures
@@ -49,17 +50,20 @@ Our group has developed interpretable machine learning models as a part of our s
 * Variation approaches
   * Our EBM model Grid search runs through 100 iterations
   * We split our data by 70/30% training/validation
+
 ## Evaluation Data
-### Details on the dataset(s) used for the quantitative analyses in the card.
+(Details on the dataset(s) used for the quantitative analyses in the card)
 * Datasets
 * Motivation
 * Preprocessing
+*(Link to Evaluation data)
 
 ## Training Data
-### Mirror Evaluation Data
+(Mirror Evaluation Data)
 If such detail is not possible, minimal allowable information
 should be provided here, such as details of the distribution
 over various factors in the training datasets.
+*(Link to training data)
 
 ## Quantitative Analysis
 * Unitary results:
@@ -69,9 +73,13 @@ over various factors in the training datasets.
   * Among the models explored (Ensemble, GML, MGBM, EBM) we found that the EBM model produced the greatest fidelity to the true outcomes. We compared AUC results to evaluate the  models independently, and once we determined the superiority of the EBM class model, we continued on to remediation techniques.
 ### Visualizations
 
+Partial Dependence Plots:
+
 ![Partial Dependence Plots](/img/pdps.png)
 ![Partial Dependence Plots](/img/pdps2.png)
 ![Partial Dependence Plots](/img/pdps3.png)
+
+Global Model Variable Importance:
 
 ![Global Variable Importance](/img/global_features.png)
 
