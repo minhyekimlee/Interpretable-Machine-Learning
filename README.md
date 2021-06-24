@@ -38,11 +38,11 @@ Our group has developed interpretable machine learning models as a part of our s
 ## Metrics
 ### Metrics should be chosen to reflect potential realworld impacts of the model.
 * Model performance measures
-  *
+  * In our projectm we choose AUC as the Metrics of the model: in machine learining, AUC is one of the most important evaluation metrics for checking the model’s performance.
 * Decision thresholds
-  *
+  * Typically, an excellent model has AUC near to the 1 and a poor model has an AUC near 0, if a model's AUC is 0.5, it means the model has no class separation capacity. In our project, we didn't set Decision thresholds of the AUC, but we select our best model(EBM), with the highest AUC which is 
 * Variation approaches
-  *
+  * 100 iterations
 
 ## Evaluation Data
 ### Details on the dataset(s) used for the quantitative analyses in the card.
