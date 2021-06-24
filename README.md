@@ -15,7 +15,7 @@ Our group has developed interpretable machine learning models as a part of our s
 ### Basic Information
 * Model date: June 2021
 * Model version: 1.0
-* Model types: EBM, MGBM, Ensemble, GML
+* Model types: Explainable Boosting Machines (EBM), Monotonic Gradient Boosting Machine (MGBM), Ensemble, & Penalized Gradual Machine Learning (GML)
 * Paper or other resource for more information
   * [The Elements of Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/)
   * [Generalized Additive Models](https://www.routledge.com/Generalized-Additive-Models/Hastie-Tibshirani/p/book/9780412343902)
@@ -44,7 +44,7 @@ Our group has developed interpretable machine learning models as a part of our s
 ## Metrics
 
 * Model performance measures
-  * In our project, we choose AUC as the evaluation metric of the model: in machine learining, AUC is one of the most important evaluation metrics for checking the model’s performance.
+  * In our project, we choose Area Under the Curve (AUC) as the evaluation metric of the model: in machine learining, AUC is one of the most important evaluation metrics for checking the model’s performance in classification.
 * Decision thresholds
   * Typically, an excellent model has AUC near to the 1 and a poor model has an AUC near 0, if a model's AUC is 0.5, it means the model has no class separation capacity. In our project, we didn't set decision thresholds of the AUC, but we select our best model (EBM), with the highest AUC which is **0.82472**(pre-remediation), **0.7804**(remediation).
 * Variation approaches
@@ -56,14 +56,14 @@ Our group has developed interpretable machine learning models as a part of our s
 * Datasets
 * Motivation
 * Preprocessing
-*(Link to Evaluation data)
+* (Link to Evaluation data)
 
 ## Training Data
 (Mirror Evaluation Data)
 If such detail is not possible, minimal allowable information
 should be provided here, such as details of the distribution
 over various factors in the training datasets.
-*(Link to training data)
+* (Link to training data)
 
 ## Quantitative Analysis
 * Unitary results:
