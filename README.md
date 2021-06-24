@@ -34,7 +34,7 @@ Our group has developed interpretable machine learning models as a part of our s
   * From our common sense, a high-amount and long-period mortgage usually result in a comparetively higher APR(since the financial institutions are correspondingly taking on more risk), so we thought high-amount and long-period mortgage are two foreseeable salient factors could make our model performance vary.
 
 * Evaluation factors
-  *
+  * Accoring to our dataset, the factors that if the mortage is high-priced are being reported(showed as loan amount std), the reason why was these chosen is because it is a imporant features of the mortgage. According to our feature importance,the loan amount is 4th importance toward our preditive object. 
 ## Metrics
 ### Metrics should be chosen to reflect potential realworld impacts of the model.
 * Model performance measures
