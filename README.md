@@ -30,7 +30,8 @@ Our group has developed interpretable machine learning models as a part of our s
 ## Factors
 ### Factors could include demographic or phenotypic groups, environmental conditions, technical attributes, or others listed in Section 4.3.
 * Relevant factors
-  *
+  * Since our project goal is to determine if the annual percentage rate (APR) charged for a mortgage is High-priced(or not), which we consider as one of many issues that perpetuates a massive disparity in overall wealth between different demographic groups in the US. As a result, a demographic factor that if a mortgage is belonging to a white family or minorities should be include.     
+
 * Evaluation factors
   *
 ## Metrics
