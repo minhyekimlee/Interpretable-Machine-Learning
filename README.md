@@ -17,6 +17,9 @@ Our group has developed interpretable machine learning models as a part of our s
 * Model types: EBM, MGBM, Ensenble 
 * Information about training algorithms, parameters, fairness constraints or other applied approaches, and features
 * Paper or other resource for more information
+  * [The Elements of Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/)
+  * [Generalized Additive Models](https://www.routledge.com/Generalized-Additive-Models/Hastie-Tibshirani/p/book/9780412343902)
+  * [Responsible Artificial Intelligence](https://www.springer.com/gp/book/9783030303709)
 * Citation details
 * [License](https://github.com/zrvila/Interpretable-Machine-Learning/blob/main/LICENSE)
 * Where to send questions or comments about the model
