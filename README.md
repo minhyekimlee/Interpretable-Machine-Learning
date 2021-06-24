@@ -14,7 +14,7 @@ Our group has developed interpretable machine learning models as a part of our s
 ### Basic Information
 * Model date: June 2021
 * Model version: 1.0
-* Model types: EBM, MGBM, Ensenble 
+* Model types: EBM, MGBM, Ensemble 
 * Information about training algorithms, parameters, fairness constraints or other applied approaches, and features
 * Paper or other resource for more information
   * [The Elements of Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/)
