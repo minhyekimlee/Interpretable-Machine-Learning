@@ -40,10 +40,10 @@ Our group has developed interpretable machine learning models as a part of our s
 * Model performance measures
   * In our projectm we choose AUC as the Metrics of the model: in machine learining, AUC is one of the most important evaluation metrics for checking the model’s performance.
 * Decision thresholds
-  * Typically, an excellent model has AUC near to the 1 and a poor model has an AUC near 0, if a model's AUC is 0.5, it means the model has no class separation capacity. In our project, we didn't set Decision thresholds of the AUC, but we select our best model(EBM), with the highest AUC which is 
+  * Typically, an excellent model has AUC near to the 1 and a poor model has an AUC near 0, if a model's AUC is 0.5, it means the model has no class separation capacity. In our project, we didn't set Decision thresholds of the AUC, but we select our best model(EBM), with the highest AUC which is **0.82472**(pre-remediation), **0.7804**(remediation).
 * Variation approaches
-  * 100 iterations
-
+  * our EBM model Grid search run 100 iterations
+  * we split our data by 70/30% training/validation
 ## Evaluation Data
 ### Details on the dataset(s) used for the quantitative analyses in the card.
 * Datasets
