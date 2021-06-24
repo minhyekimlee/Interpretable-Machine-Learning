@@ -24,7 +24,7 @@ Our group has developed interpretable machine learning models as a part of our s
   * Please refer to “Team Information” section.
 
 ## Intended Use
-### Use cases that were envisioned during development.
+
 * Primary intended uses
   * The primary intended use is to provide an interpretable machine learning model that help explain predictions as opposed to black box models which provide little, if any, explanation. Such transparency may help prevent bias and discrimination that can occur with black-box models as it relates to applicants with higher mortgage rates.
 * Primary intended users
@@ -33,7 +33,7 @@ Our group has developed interpretable machine learning models as a part of our s
   * 
 
 ## Factors
-### Factors could include demographic or phenotypic groups, environmental conditions, technical attributes, or others listed in Section 4.3.
+
 * Relevant factors
   * Since our project goal is to determine if the annual percentage rate (APR) charged for a mortgage is High-priced(or not), which we consider as one of many issues that perpetuates a massive disparity in overall wealth between different demographic groups in the US. As a result, a demographic factor that if a mortgage is belonging to a white or minority(black, asian, latin...) family should be include, and we supposed that white family are more likely to get a low-priced mortgage and minority family are more likely to get a High-priced mortgage.    
   * From our common sense, a high-amount and long-period mortgage usually result in a comparetively higher APR(since the financial institutions are correspondingly taking on more risk), so we thought high-amount and long-period mortgage are two foreseeable salient factors could make our model performance vary.
@@ -41,7 +41,7 @@ Our group has developed interpretable machine learning models as a part of our s
 * Evaluation factors
   * Accoring to our dataset, the factors that if the mortage is high-priced are being reported(showed as loan amount std), the reason why was these chosen is because it is a imporant features of the mortgage. According to our feature importance,the loan amount is 4th importance toward our preditive object. 
 ## Metrics
-### Metrics should be chosen to reflect potential realworld impacts of the model.
+
 * Model performance measures
   * In our project, we choose AUC as the Metrics of the model: in machine learining, AUC is one of the most important evaluation metrics for checking the model’s performance.
 * Decision thresholds
