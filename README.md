@@ -64,14 +64,13 @@ Our group has developed interpretable machine learning models as a part of our s
 * Data Shape
   * Training data rows = 112,253, columns = 23
   * Validation data rows = 48,085, columns = 23 
-* All Training Data Columns
-  * **Attributes selected to remediate our model for fairness regarding demographic information.**
+* Attributes selected to remediate our model for fairness regarding demographic information.
   * **black**: Binary numeric input, whether the borrower is Black (1) or not (0).
   * **asian**: Binary numeric input, whether the borrower is Asian (1) or not (0).
   * **white**: Binary numeric input, whether the borrower is White (1) or not (0).
   * **male**: Binary numeric input, whether the borrower is male (1) or not (0).
   * **female**: Binary numeric input, whether the borrower is female (1) or not (0).
-  * **Attributes selected to fit our model which best explain the relationship of an independent variable with the target variable**
+* Attributes selected to fit our model which best explain the relationship of an independent variable with the target variable.
   * **term 360**: Binary numeric input, whether the mortgage is a standard 360 month mortgage (1) or a different type of mortgage (0).
   * **conforming**: Binary numeric input, whether the mortgage conforms to normal standards (1), or whether the loan is different (0), e.g., jumbo, HELOC, reverse mortgage, etc.
   * **debt to income ratio missing**: Binary numeric input, missing marker (1) for debt to income ratio std.
@@ -82,7 +81,7 @@ Our group has developed interpretable machine learning models as a part of our s
   * **property value std**: Numeric input, value of the mortgaged property.
   * **income std**: Numeric input, standardized income for mortgage applicants.
   * **debt to income ratio std**: Numeric input, standardized debt-to-income ratio for mortgage applicants.
-  * **Attribute for the target variable**
+* Attribute for the target variable.
   * **high priced**: Binary target, whether (1) or not (0) the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages. (High-priced mortgages are legal, but somewhat punitive to borrowers. High-priced mortgages often fall on the shoulders of minority home owners, and are one of many issues that perpetuates a massive disparity in overall wealth between different demographic groups in the US.)
   * **Attributes that were not used in our approaches.**
   * **row id**: Numeric input, value that uniquely identifies a row in a table.
@@ -101,7 +100,7 @@ Our group has developed interpretable machine learning models as a part of our s
 * Data Shape
   * Test data rows = 19,832, columns = 22
 * All Test Data Columns
-  * All columns are as the same as the training & validation data, except for that the target variable **high priced** column does not exsit in this test data.
+  * All the columns are as the same as the training & validation data, except for that the target variable **high priced** column does not exsit in this test data.
 
 * Link: [hmda_test_preprocessed.zip](https://github.com/jphall663/GWU_rml/blob/master/assignments/data/hmda_test_preprocessed.zip)
 
