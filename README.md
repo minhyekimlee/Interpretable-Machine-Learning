@@ -101,7 +101,7 @@ Our group has developed interpretable machine learning models as a part of our s
 * Data Shape
   * Test data rows = 19,832, columns = 22
 * All Test Data Columns
-  * All columns are the same except for that the target variable, **high priced** column does not exsit in this test data.
+  * All columns are as the same as the training & validation data, except for that the target variable **high priced** column does not exsit in this test data.
 
 * [hmda_test_preprocessed.zip](https://github.com/jphall663/GWU_rml/blob/master/assignments/data/hmda_test_preprocessed.zip)
 
