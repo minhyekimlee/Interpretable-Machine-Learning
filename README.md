@@ -15,11 +15,8 @@ Our group has developed interpretable machine learning models as a part of our s
 ### Basic Information
 * Model date: June 2021
 * Model version: 1.0
-* Model types: 
-  * Explainable Boosting Machines (EBM)
-  * Monotonic Gradient Boosting Machine (MGBM)
-  * Ensemble
-  * Penalized Gradual Machine Learning (GML)
+* Model Type: 
+  * Explainable Boosting Machine (EBM)
 * Paper or other resource for more information
   * [The Elements of Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/)
   * [Generalized Additive Models](https://www.routledge.com/Generalized-Additive-Models/Hastie-Tibshirani/p/book/9780412343902)
@@ -108,8 +105,13 @@ Our group has developed interpretable machine learning models as a part of our s
 * Unitary results:
   * Our best remediated EBM model produced an AUC of **0.7804** after employing sevral post-processing techniques such as removing outliers and sensitivity analysis to economic recession conditions. This AUC was also achieved when ensuring a minimum Adverse Impact Ratio (AIR) of 0.8.
   * Best training/validation AUC (pre-remediation): **0.8247**
+* Alternative Models:
+  * Monotonic Gradient Boosting Machine (MGBM)
+  * Ensemble
+  * Penalized Generalized Linear Model (GLM)
 * Intersectional results:
-  * Among the models explored (Ensemble, GML, MGBM, EBM) we found that the EBM model produced the greatest fidelity to the true outcomes, while maintaining the highest standards of fairness. We compared AUC results to evaluate the  models independently, and once we determined the superiority of the EBM class model, we continued on to remediation techniques.
+  * Among the models explored (EBM, MGBM, Ensemble, and GLM) we found that the EBM model produced the greatest fidelity to the true outcomes, while maintaining the highest standards of fairness. We compared AUC results to evaluate the  models independently, and once we determined the superiority of the EBM class model, we continued on to remediation techniques.
+
 ### Visualizations
 
 **Partial Dependence Plots:**
