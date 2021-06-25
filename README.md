@@ -93,7 +93,7 @@ Our group has developed interpretable machine learning models as a part of our s
   * **agegte62**: Binary numeric input, whether the borrower's age is over 62 (1) or not (0).
   * **agelt62**: Binary numeric input, whether the borrower's co-borrower's age is over 62 (1) or not (0).
 
-* [hmda_train_preprocessed.zip](https://github.com/jphall663/GWU_rml/blob/master/assignments/data/hmda_train_preprocessed.zip)
+* Link: [hmda_train_preprocessed.zip](https://github.com/jphall663/GWU_rml/blob/master/assignments/data/hmda_train_preprocessed.zip)
 
 ## Evaluation (Test) Data
 * Datasets
@@ -103,7 +103,7 @@ Our group has developed interpretable machine learning models as a part of our s
 * All Test Data Columns
   * All columns are as the same as the training & validation data, except for that the target variable **high priced** column does not exsit in this test data.
 
-* [hmda_test_preprocessed.zip](https://github.com/jphall663/GWU_rml/blob/master/assignments/data/hmda_test_preprocessed.zip)
+* Link: [hmda_test_preprocessed.zip](https://github.com/jphall663/GWU_rml/blob/master/assignments/data/hmda_test_preprocessed.zip)
 
 ## Quantitative Analysis
 * Unitary results:
