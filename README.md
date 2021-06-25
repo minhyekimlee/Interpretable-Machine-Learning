@@ -60,19 +60,31 @@ Our group has developed interpretable machine learning models as a part of our s
   * Home Mortgage Disclosure Act ([HMDA](https://www.ffiec.gov/hmda/history2.htm)) aggregate lending data
 * Preprocessing
   * This data contains no major quality issues, so no preprocessing was required.
-  * The training data was divided into training and validation data with random values in a shape of 70 (training):30 (evaluation).
+  * The data was divided into training and validation data with random values in a shape of 70 (training):30 (evaluation).
 * Data Shape
   * Training data rows = 112,253, columns = 23
   * Validation data rows = 48,085, columns = 23 
 * All Training Data Columns
+  * **row id**: Numeric input, value that uniquely identifies a row in a table.
+  * Attributes selected to remediate our model for fairness regarding demographic information.
+  * **black**: Binary numeric input, whether the borrower is Black (1) or not (0).
+  * **asian**: Binary numeric input, whether the borrower is Asian (1) or not (0).
+  * **white**: Binary numeric input, whether the borrower is White (1) or not (0).
+  * **male**: Binary numeric input, whether the borrower is male (1) or not (0).
+  * **female**: Binary numeric input, whether the borrower is female (1) or not (0).
   * Attributes selected to fit our model which best explain the relationship of an independent variable with the target variable
-  * **high priced**: Binary target, whether (1) or not (0) the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages. (High-priced mortgages are legal, but somewhat punitive to borrowers. High-priced mortgages often fall on the shoulders of minority home owners, and are one of many issues that perpetuates a massive disparity in overall wealth between different demographic groups in the US.)
+  * **term 360**: Binary numeric input, whether the mortgage is a standard 360 month mortgage (1) or a different type of mortgage (0).
   * **conforming**: Binary numeric input, whether the mortgage conforms to normal standards (1), or whether the loan is different (0), e.g., jumbo, HELOC, reverse mortgage, etc.
-  * **debt to income ratio std**: Numeric input, standardized debt-to-income ratio for mortgage applicants.
   * **debt to income ratio missing**: Binary numeric input, missing marker (1) for debt to income ratio std.
-  * **income std**: Numeric input, standardized income for mortgage applicants.
   * **loan amount std**: Numeric input, standardized amount of the mortgage for applicants.
+  * **loan to value ratio std**: Numeric input, ratio of the mortgage size to the value of the property for mortgage applicants.
+  * **no intro rate period std**: Binary numeric input, whether or not a mortgage does not include an introductory rate period.
   * **intro rate period std**: Numeric input, standardized introductory rate period for mortgage applicants.
+  * **property value std**: Numeric input, value of the mortgaged property.
+  * **income std**: Numeric input, standardized income for mortgage applicants.
+  * **debt to income ratio std**: Numeric input, standardized debt-to-income ratio for mortgage applicants.
+  * **high priced**: Binary target, whether (1) or not (0) the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages. (High-priced mortgages are legal, but somewhat punitive to borrowers. High-priced mortgages often fall on the shoulders of minority home owners, and are one of many issues that perpetuates a massive disparity in overall wealth between different demographic groups in the US.)
+  
 * [hmda_train_preprocessed.zip](https://github.com/jphall663/GWU_rml/blob/master/assignments/data/hmda_train_preprocessed.zip)
 
 ## Evaluation (Test) Data
