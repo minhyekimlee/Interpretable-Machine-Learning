@@ -83,7 +83,7 @@ Our group has developed interpretable machine learning models as a part of our s
   * **debt to income ratio std**: Numeric input, standardized debt-to-income ratio for mortgage applicants.
 * Attribute for the target variable.
   * **high priced**: Binary target, whether (1) or not (0) the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages. (High-priced mortgages are legal, but somewhat punitive to borrowers. High-priced mortgages often fall on the shoulders of minority home owners, and are one of many issues that perpetuates a massive disparity in overall wealth between different demographic groups in the US.)
-  * **Attributes that were not used in our approaches.**
+* Attributes that were not used in our approaches.
   * **row id**: Numeric input, value that uniquely identifies a row in a table.
   * **amind**: Binary numeric input, whether the borrower is American Indian (1) or not (0). 
   * **hipac**: Binary numeric input, whether the borrower is Native Hawaiian or Other Pacific Islander (1) or not (0). 
