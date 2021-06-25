@@ -15,8 +15,7 @@ Our group has developed interpretable machine learning models as a part of our s
 ### Basic Information
 * Model date: June 2021
 * Model version: 1.0
-* Model Type: 
-  * Explainable Boosting Machine (EBM)
+* Model Type: Explainable Boosting Machine (EBM)
 * Paper or other resource for more information
   * [The Elements of Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/)
   * [Generalized Additive Models](https://www.routledge.com/Generalized-Additive-Models/Hastie-Tibshirani/p/book/9780412343902)
