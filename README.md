@@ -92,8 +92,7 @@ Our group has developed interpretable machine learning models as a part of our s
   * **non hispanic**: Binary numeric input, whether the borrower is Non-Hispanic (1) or not (0).
   * **agegte62**: Binary numeric input, whether the borrower's age is over 62 (1) or not (0).
   * **agelt62**: Binary numeric input, whether the borrower's co-borrower's age is over 62 (1) or not (0).
-* All Test Data Columns
-  * All columns are the same except for that the target variable, **high priced** column does not exsit in this test data.  
+
 * [hmda_train_preprocessed.zip](https://github.com/jphall663/GWU_rml/blob/master/assignments/data/hmda_train_preprocessed.zip)
 
 ## Evaluation (Test) Data
@@ -101,7 +100,9 @@ Our group has developed interpretable machine learning models as a part of our s
   * Home Mortgage Disclosure Act (HMDA) aggregate lending data
 * Data Shape
   * Test data rows = 19,832, columns = 22
-  * 
+* All Test Data Columns
+  * All columns are the same except for that the target variable, **high priced** column does not exsit in this test data.
+
 * [hmda_test_preprocessed.zip](https://github.com/jphall663/GWU_rml/blob/master/assignments/data/hmda_test_preprocessed.zip)
 
 ## Quantitative Analysis
