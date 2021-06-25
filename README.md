@@ -16,7 +16,7 @@ Our group has developed interpretable machine learning models as a part of our s
 * Model date: June 2021
 * Model version: 1.0
 * Model Type: Explainable Boosting Machine (EBM)
-* Software: [InterpretML](https://github.com/interpretml/interpret) pypi: v0.2.5
+* Software: [InterpretML](https://github.com/interpretml/interpret), pypi: v0.2.5
 * Paper or other resource for more information
   * [The Elements of Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/)
   * [Generalized Additive Models](https://www.routledge.com/Generalized-Additive-Models/Hastie-Tibshirani/p/book/9780412343902)
