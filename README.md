@@ -25,8 +25,6 @@ Our group has developed interpretable machine learning models as a part of our s
   * [Generalized Additive Models](https://www.routledge.com/Generalized-Additive-Models/Hastie-Tibshirani/p/book/9780412343902)
   * [Responsible Artificial Intelligence](https://www.springer.com/gp/book/9783030303709)
 * [License](https://github.com/zrvila/Interpretable-Machine-Learning/blob/main/LICENSE)
-* Where to send questions or comments about the model
-  * Please refer to “Team Information” section.
 
 ## Intended Use
 
