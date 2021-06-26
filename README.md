@@ -114,29 +114,22 @@ Our group has developed interpretable machine learning models as a part of our s
   * Monotonic Gradient Boosting Machine (MGBM): **0.8021**
   * Penalized Generalized Linear Model (GLM): **0.7628**
 
-### Visualizations
-
-**Partial Dependence Plots:**
+### Partial Dependence Plots:
 The partial dependence plot (short PDP or PD plot) shows the "marginal effect one or two features have on the predicted outcome of a machine learning model" (J. H. Friedman 2001).
-
 ![Partial Dependence Plots](/img/pdps.png)
 ![Partial Dependence Plots](/img/pdps2.png)
 ![Partial Dependence Plots](/img/pdps3.png)
-
-**Global Model Variable Importance:**
+### Global Model Variable Importance:
 Global variable importance values give an indication of the magnitude of a variable’s contribution to model predictions for all of the data.
-
 ![Global Variable Importance](/img/global_features.png)
 
 ## Ethical Considerations
 * Although we use the 4/5ths rule, one should aim for full parity where possible in a machine learning model (i.e. 1 to 1 parity in classification)
 * Pre-processing remediation techniques should be scrutinized for potential legal issues (e.g. manipulating data with racial class could consitute affirmative action)
 * Failure to perform bias testing and remediation of machine learning models can lead to discrimination, which can become self-reinforcing over time
- 
-## Caveats and Recommendations
 * See 4/5ths Rule: https://www.prevuehr.com/resources/insights/adverse-impact-analysis-four-fifths-rule/
-* This model card does not consitute legal advice
-* Further exploration is warranted for our models, but we provide a baseline here
+* This model card does not consitute legal advice.
+* Further exploration is warranted for our models, but we provide a baseline here.
 * Additional Reading
   * [Interpretable Models](https://originalstatic.aminer.cn/misc/pdf/Molnar-interpretable-machine-learning_compressed.pdf#:~:text=Interpretable%20Machine%20Learning%20refers%20to%20methods%20and%20models,that%20make%20the%20behavior%20and%20predictionsofmachinelearningsystemsunderstandabletohumans.%20ADatasetisatablewiththedatafromwhichthemachinelearns.Thedatasetcontainsthefeatures%20andthetargettopredict.Whenusedtoinduceamodel%2Cthedatasetiscalledtrainingdata.)
   * ["Black Boxes"](https://y-sbm.com/blog/black-box-in-machine-leraning)
