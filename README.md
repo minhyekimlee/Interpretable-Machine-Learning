@@ -107,7 +107,7 @@ Our group has developed interpretable machine learning models as a part of our s
   * Our best remediated EBM model produced an AUC of **0.7804** after employing sevral post-processing techniques such as removing outliers and sensitivity analysis to economic recession conditions. This AUC was also achieved when ensuring a minimum Adverse Impact Ratio (AIR) of 0.8.
   * Best training/validation AUC (pre-remediation): **0.8247**
 * Intersectional results:
-  * Among the models explored (EBM, Ensemble, GBM, MGBM, and GLM) we found that the EBM model produced the greatest fidelity to the true outcomes, while maintaining the highest standards of fairness. We compared AUC results to evaluate the  models independently, and once we determined the superiority of the EBM class model, we continued on to remediation techniques.
+  * Among the models explored (EBM, Ensemble, GBM, MGBM, and GLM), we found that the EBM model produced the greatest fidelity to the true outcomes, while maintaining the highest standards of fairness. We compared not only the AUC results to evaluate the models independently but also cross-validated over a number of evaluation metrics such as ACC, AUC, LogLoss, F1, and MSE. Once we determined the superiority of the EBM class model, we selected it as the best model and continued on to remediation techniques.
 * AUC (pre-remediation) of other alternative models:
   * Ensemble: **0.8195**
   * Gradient Boosting Machine (GBM): **0.8183**
@@ -128,7 +128,7 @@ Global variable importance values give an indication of the magnitude of a varia
 * Pre-processing remediation techniques should be scrutinized for potential legal issues (e.g. manipulating data with racial class could consitute affirmative action)
 * Failure to perform bias testing and remediation of machine learning models can lead to discrimination, which can become self-reinforcing over time
 * See 4/5ths Rule: https://www.prevuehr.com/resources/insights/adverse-impact-analysis-four-fifths-rule/
-* This model card does not consitute legal advice.
+* This model card does not consitute legal or compliance advice.
 * Further exploration is warranted for our models, but we provide a baseline here.
 * Additional Reading
   * [Interpretable Models](https://originalstatic.aminer.cn/misc/pdf/Molnar-interpretable-machine-learning_compressed.pdf#:~:text=Interpretable%20Machine%20Learning%20refers%20to%20methods%20and%20models,that%20make%20the%20behavior%20and%20predictionsofmachinelearningsystemsunderstandabletohumans.%20ADatasetisatablewiththedatafromwhichthemachinelearns.Thedatasetcontainsthefeatures%20andthetargettopredict.Whenusedtoinduceamodel%2Cthedatasetiscalledtrainingdata.)
