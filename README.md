@@ -46,7 +46,7 @@ Our group has developed interpretable machine learning models as a part of our s
 ## Metrics
 
 * Model performance measures
-  * In our project, we choose Area Under the Curve (AUC) as the evaluation metric of the model: in machine learining, AUC is one of the most important evaluation metrics for checking the model’s performance in classification.
+  * In our project, we choose [Area Under the Curve](https://towardsdatascience.com/illustrating-predictive-models-with-the-roc-curve-67e7b3aa8914#:~:text=Area%20Under%20the%20Curve%20%28AUC%29%20The%20AUC%20is,means%20there%20is%20perfect%20prediction%20by%20the%20model.) (AUC) as the evaluation metric of the model: in machine learining, AUC is one of the most important evaluation metrics for checking the model’s performance in classification.
 * Decision thresholds
   * Typically, an excellent model has AUC near to the 1 and a poor model has an AUC near 0, if a model's AUC is 0.5, it means the model has no class separation capacity. In our project, we didn't set decision thresholds of the AUC, but we select our best model (EBM), with the highest AUC which is **0.8247** (pre-remediation), or **0.7804** (post-remediation).
 * Variation approaches
@@ -104,11 +104,11 @@ Our group has developed interpretable machine learning models as a part of our s
 
 ## Quantitative Analysis
 * Unitary results:
-  * Our best remediated EBM model produced an AUC of **0.7804** after employing sevral post-processing techniques such as removing outliers and sensitivity analysis to economic recession conditions. This AUC was also achieved when ensuring a minimum Adverse Impact Ratio (AIR) of 0.8.
+  * Our best remediated EBM model produced an AUC of **0.7804** after employing sevral post-processing techniques such as removing outliers and sensitivity analysis to economic recession conditions. This AUC was also achieved while ensuring a minimum Adverse Impact Ratio (AIR) of 0.8.
   * Best training/validation AUC (pre-remediation): **0.8247**
 * Intersectional results:
-  * Among the models explored (EBM, Ensemble, GBM, MGBM, and GLM) we found that the EBM model produced the greatest fidelity to the true outcomes, while maintaining the highest standards of fairness. We compared AUC results to evaluate the  models independently, and once we determined the superiority of the EBM class model, we continued on to remediation techniques.
-* AUC (pre-remediation) of other alternative models
+  * Among the models explored (EBM, Ensemble, GBM, MGBM, and GLM), we found that the EBM model produced the greatest fidelity to the true outcomes, while maintaining the highest standards of fairness. We compared not only the AUC results to evaluate the models independently but also cross-validated over a number of evaluation metrics such as ACC, AUC, LogLoss, F1, and MSE. Once we determined the superiority of the EBM class model, we selected it as the best model and continued on to remediation techniques.
+* AUC (pre-remediation) of other alternative models:
   * Ensemble: **0.8195**
   * Gradient Boosting Machine (GBM): **0.8183**
   * Monotonic Gradient Boosting Machine (MGBM): **0.8021**
@@ -124,12 +124,12 @@ Global variable importance values give an indication of the magnitude of a varia
 ![Global Variable Importance](/img/global_features.png)
 
 ## Ethical Considerations
-* Although we use the 4/5ths rule, one should aim for full parity where possible in a machine learning model (i.e. 1 to 1 parity in classification)
+* Although we use the [4/5ths rule](https://www.prevuehr.com/resources/insights/adverse-impact-analysis-four-fifths-rule/), one should aim for full parity where possible in a machine learning model (i.e. 1 to 1 parity in classification)
 * Pre-processing remediation techniques should be scrutinized for potential legal issues (e.g. manipulating data with racial class could consitute affirmative action)
 * Failure to perform bias testing and remediation of machine learning models can lead to discrimination, which can become self-reinforcing over time
-* See 4/5ths Rule: https://www.prevuehr.com/resources/insights/adverse-impact-analysis-four-fifths-rule/
-* This model card does not consitute legal advice.
-* Further exploration is warranted for our models, but we provide a baseline here.
+* Our best model underperformed markedly when exposed to economic conditions mimicking a recession, which demonstrates that even the most carefully scrutinized training data can be undermined by shifting real-world conditions
+* This model card does not consitute legal or compliance advice
+* Further exploration is warranted for our models, but we provide a baseline here
 * Additional Reading
   * [Interpretable Models](https://originalstatic.aminer.cn/misc/pdf/Molnar-interpretable-machine-learning_compressed.pdf#:~:text=Interpretable%20Machine%20Learning%20refers%20to%20methods%20and%20models,that%20make%20the%20behavior%20and%20predictionsofmachinelearningsystemsunderstandabletohumans.%20ADatasetisatablewiththedatafromwhichthemachinelearns.Thedatasetcontainsthefeatures%20andthetargettopredict.Whenusedtoinduceamodel%2Cthedatasetiscalledtrainingdata.)
   * ["Black Boxes"](https://y-sbm.com/blog/black-box-in-machine-leraning)
