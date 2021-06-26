@@ -108,7 +108,7 @@ Our group has developed interpretable machine learning models as a part of our s
   * Best training/validation AUC (pre-remediation): **0.8247**
 * Intersectional results:
   * Among the models explored (EBM, Ensemble, GBM, MGBM, and GLM) we found that the EBM model produced the greatest fidelity to the true outcomes, while maintaining the highest standards of fairness. We compared AUC results to evaluate the  models independently, and once we determined the superiority of the EBM class model, we continued on to remediation techniques.
-* AUC (pre-remediation) of other alternative models
+* AUC (pre-remediation) of other alternative models:
   * Ensemble: **0.8195**
   * Gradient Boosting Machine (GBM): **0.8183**
   * Monotonic Gradient Boosting Machine (MGBM): **0.8021**
