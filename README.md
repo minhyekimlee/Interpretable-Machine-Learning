@@ -33,14 +33,13 @@ Our group has developed interpretable machine learning models as a part of our s
  'early_stopping_rounds': 100.0,
  'n_jobs': 4,
  'random_state': 12345}
- * Columns used as inputs:
- * ['intro_rate_period_std',
+ * Columns used as inputs: ['intro_rate_period_std',
  'no_intro_rate_period_std',
  'debt_to_income_ratio_missing',
  'property_value_std',
  'income_std',
  'debt_to_income_ratio_std']
- * Column used as target: [high-priced]
+ * Column used as target: 'high-priced'
 * Paper or other resource for more information
   * [The Elements of Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/)
   * [Generalized Additive Models](https://www.routledge.com/Generalized-Additive-Models/Hastie-Tibshirani/p/book/9780412343902)
@@ -60,7 +59,7 @@ Our group has developed interpretable machine learning models as a part of our s
 
 * Relevant factors
   * Since our project goal is to determine if the Annual Percentage Rate (APR) charged for a mortgage is high-priced or not, which we consider as one of many issues that perpetuates a massive disparity in overall wealth between different demographic groups in the US. As a result, a demographic factor such as race or sex should be included. We discovered black applicants are more likely to get high-priced mortgages.
-  * From our common sense, a high-priced and long-period mortgage usually result in a comparatively higher APR(since the financial institutions are correspondingly taking on more risk), so we thought high-amount and long-period mortgage are two foreseeable salient factors that could make our model performance vary.
+  * From our common sense, a high-priced and long-period mortgage usually result in a comparatively higher APR (since the financial institutions are correspondingly taking on more risk), so we thought high-amount and long-period mortgage are two foreseeable salient factors that could make our model performance vary.
 * Evaluation factors
   * According to our dataset, when high-priced mortgage is reported (shown as loan amount std), the reason is because it is a important feature of the mortgage. According to our feature importance, the loan amount is 4th importance toward our predictive object.
 
