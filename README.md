@@ -19,7 +19,27 @@ Our group has developed interpretable machine learning models as a part of our s
 * Model date: June 2021
 * Model version: 1.0
 * Model Type: Explainable Boosting Machine (EBM)
-* Software: Python 3.6+, [InterpretML](https://github.com/interpretml/interpret), pypi: v0.2.5
+* Software: Python 3.6+, [InterpretML](https://github.com/interpretml/interpret) v0.2.5.
+* Hyperparameters:
+{'max_bins': 512,
+ 'max_interaction_bins': 32,
+ 'interactions': 15,
+ 'outer_bags': 10,
+ 'inner_bags': 4,
+ 'learning_rate': 0.01,
+ 'validation_size': 0.4,
+ 'min_samples_leaf': 1,
+ 'max_leaves': 3,
+ 'early_stopping_rounds': 100.0,
+ 'n_jobs': 4,
+ 'random_state': 12345}
+ * Columns used as inputs: ['intro_rate_period_std',
+ 'no_intro_rate_period_std',
+ 'debt_to_income_ratio_missing',
+ 'property_value_std',
+ 'income_std',
+ 'debt_to_income_ratio_std']
+ * Column used as target: 'high-priced'
 * Paper or other resource for more information
   * [The Elements of Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/)
   * [Generalized Additive Models](https://www.routledge.com/Generalized-Additive-Models/Hastie-Tibshirani/p/book/9780412343902)
@@ -30,30 +50,23 @@ Our group has developed interpretable machine learning models as a part of our s
 
 * Primary intended uses
   * The primary intended use is to provide an interpretable machine learning model that helps explain predictions as opposed to black box models which provide little, if any, explanation. Such transparency may help prevent bias and discrimination that can occur with black-box models as it relates to applicants with higher mortgage rates.
+  * Our project goal is to determine if the Annual Percentage Rate (APR) charged for a mortgage is high-priced or not, which we consider as one of many issues that perpetuates a massive disparity in overall wealth between different demographic groups in the US. As a result, a demographic factor such as race or sex was considered. We discovered black applicants are more likely to get high-priced mortgages.
 * Primary intended users
   * The primary intended users of this model are professors, students, and researchers of interpretable machine learning models.
 * Out-of-scope use cases
   * This model is for educational purposes and not intended to evaluate real-world credit worthiness.
 
-## Factors
-
-* Relevant factors
-  * Since our project goal is to determine if the annual percentage rate (APR) charged for a mortgage is High-priced(or not), which we consider as one of many issues that perpetuates a massive disparity in overall wealth between different demographic groups in the US. As a result, a demographic factor that if a mortgage is belonging to a white or minority(black, asian, latin...) family should be include, and we supposed that white family are more likely to get a low-priced mortgage and minority family are more likely to get a High-priced mortgage.    
-  * From our common sense, a high-amount and long-period mortgage usually result in a comparetively higher APR(since the financial institutions are correspondingly taking on more risk), so we thought high-amount and long-period mortgage are two foreseeable salient factors could make our model performance vary.
-* Evaluation factors
-  * Accoring to our dataset, the factors that if the mortage is high-priced are being reported(showed as loan amount std), the reason why was these chosen is because it is a imporant features of the mortgage. According to our feature importance,the loan amount is 4th importance toward our preditive object. 
-
 ## Metrics
 
 * Model performance measures
-  * In our project, we choose [Area Under the Curve](https://towardsdatascience.com/illustrating-predictive-models-with-the-roc-curve-67e7b3aa8914#:~:text=Area%20Under%20the%20Curve%20%28AUC%29%20The%20AUC%20is,means%20there%20is%20perfect%20prediction%20by%20the%20model.) (AUC) as the evaluation metric of the model: in machine learining, AUC is one of the most important evaluation metrics for checking the model’s performance in classification.
+  * In our project, we choose [Area Under the Curve](https://towardsdatascience.com/illustrating-predictive-models-with-the-roc-curve-67e7b3aa8914#:~:text=Area%20Under%20the%20Curve%20%28AUC%29%20The%20AUC%20is,means%20there%20is%20perfect%20prediction%20by%20the%20model.) (AUC) as the evaluation metric of the model: in machine learning, AUC is one of the most important evaluation metrics for checking the model’s performance in classification.
 * Decision thresholds
-  * Typically, an excellent model has AUC near to the 1 and a poor model has an AUC near 0, if a model's AUC is 0.5, it means the model has no class separation capacity. In our project, we didn't set decision thresholds of the AUC, but we select our best model (EBM), with the highest AUC which is **0.8247** (pre-remediation), or **0.7804** (post-remediation).
+  * Typically, an excellent model has AUC near to the 1 and a poor model has an AUC near 0, if a model's AUC is 0.5, it means the model has no class separation capacity. In our project, we didn't set decision thresholds of the AUC, but we select our best model (EBM), with the highest AUC which is **0.8247** (pre-remediation), or **0.8097** (post-remediation).
 * Variation approaches
   * Our EBM model Grid search runs through 100 iterations
   * We split our data by 70/30% training/validation
 
-## Training & Validation Data
+## Training Data
 * Datasets
   * Home Mortgage Disclosure Act ([HMDA](https://www.ffiec.gov/hmda/history2.htm)) aggregate lending data
 * Preprocessing
@@ -79,6 +92,9 @@ Our group has developed interpretable machine learning models as a part of our s
   * **property value std**: Numeric input, value of the mortgaged property.
   * **income std**: Numeric input, standardized income for mortgage applicants.
   * **debt to income ratio std**: Numeric input, standardized debt-to-income ratio for mortgage applicants.
+* Attributes engineered for residual analysis. 
+  * **phat**: Numeric input, prediction probabilities of high-priced mortgage for mortgage applicants.
+  * **r**: Numeric input, log loss residuals for the predicted probabilities 
 * Attribute for the target variable.
   * **high priced**: Binary target, whether (1) or not (0) the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages. (High-priced mortgages are legal, but somewhat punitive to borrowers. High-priced mortgages often fall on the shoulders of minority home owners, and are one of many issues that perpetuates a massive disparity in overall wealth between different demographic groups in the US.)
 * Attributes that were not used in our approaches.
@@ -92,22 +108,22 @@ Our group has developed interpretable machine learning models as a part of our s
 
 * Link: [hmda_train_preprocessed.zip](https://github.com/jphall663/GWU_rml/blob/master/assignments/data/hmda_train_preprocessed.zip)
 
-## Evaluation (Test) Data
+## Evaluation Data
 * Datasets
   * Home Mortgage Disclosure Act (HMDA) aggregate lending data
 * Data Shape
   * Test data rows = 19,832, columns = 22
 * All Test Data Columns
-  * All the columns are as the same as the training & validation data, except for that the target variable **high priced** column does not exsit in this test data.
+  * All the columns are as the same as the training & validation data, except for that the target variable **high priced** column does not exist in this test data.
 
 * Link: [hmda_test_preprocessed.zip](https://github.com/jphall663/GWU_rml/blob/master/assignments/data/hmda_test_preprocessed.zip)
 
 ## Quantitative Analysis
 * Unitary results:
-  * Our best remediated EBM model produced an AUC of **0.7804** after employing sevral post-processing techniques such as removing outliers and sensitivity analysis to economic recession conditions. This AUC was also achieved while ensuring a minimum Adverse Impact Ratio (AIR) of 0.8.
+  * Our best remediated EBM model produced an AUC of **0.8097** after employing several post-processing techniques such as removing outliers and sensitivity analysis to economic recession conditions. This AUC was also achieved while ensuring a minimum Adverse Impact Ratio (AIR) of 0.8.
   * Best training/validation AUC (pre-remediation): **0.8247**
 * Intersectional results:
-  * Among the models explored (EBM, Ensemble, GBM, MGBM, and GLM), we found that the EBM model produced the greatest fidelity to the true outcomes, while maintaining the highest standards of fairness. We compared not only the AUC results to evaluate the models independently but also cross-validated over a number of evaluation metrics such as ACC, AUC, LogLoss, F1, and MSE. Once we determined the superiority of the EBM class model, we selected it as the best model and continued on to remediation techniques.
+  * Among the models explored (EBM, Ensemble, GBM, MGBM, and GLM), we found that the EBM model produced the greatest fidelity to the true outcomes, while maintaining the highest standards of fairness. We compared not only the AUC results to evaluate the models independently but also cross-validated over a number of evaluation metrics such as ACC, AUC, Log Loss, F1, and MSE. Once we determined the superiority of the EBM class model, we selected it as the best model and continued on to remediation techniques.
 * AUC (pre-remediation) of other alternative models:
   * Ensemble: **0.8195**
   * Gradient Boosting Machine (GBM): **0.8183**
@@ -125,14 +141,14 @@ Global variable importance values give an indication of the magnitude of a varia
 
 ## Ethical Considerations
 * Although we use the [4/5ths rule](https://www.prevuehr.com/resources/insights/adverse-impact-analysis-four-fifths-rule/), one should aim for full parity where possible in a machine learning model (i.e. 1 to 1 parity in classification)
-* Pre-processing remediation techniques should be scrutinized for potential legal issues (e.g. manipulating data with racial class could consitute affirmative action)
+* Pre-processing remediation techniques should be scrutinized for potential legal issues (e.g. manipulating data with racial class could constitute affirmative action)
 * Failure to perform bias testing and remediation of machine learning models can lead to discrimination, which can become self-reinforcing over time
 * Our best model underperformed markedly when exposed to economic conditions mimicking a recession, which demonstrates that even the most carefully scrutinized training data can be undermined by shifting real-world conditions
-* This model card does not consitute legal or compliance advice
+* This model card does not constitute legal or compliance advice
 * Further exploration is warranted for our models, but we provide a baseline here
 * Additional Reading
   * [Interpretable Models](https://originalstatic.aminer.cn/misc/pdf/Molnar-interpretable-machine-learning_compressed.pdf#:~:text=Interpretable%20Machine%20Learning%20refers%20to%20methods%20and%20models,that%20make%20the%20behavior%20and%20predictionsofmachinelearningsystemsunderstandabletohumans.%20ADatasetisatablewiththedatafromwhichthemachinelearns.Thedatasetcontainsthefeatures%20andthetargettopredict.Whenusedtoinduceamodel%2Cthedatasetiscalledtrainingdata.)
   * ["Black Boxes"](https://y-sbm.com/blog/black-box-in-machine-leraning)
-  * [Discimination in algorithms](https://www.brookings.edu/research/auditing-employment-algorithms-for-discrimination/)
+  * [Discrimination in algorithms](https://www.brookings.edu/research/auditing-employment-algorithms-for-discrimination/)
 
 *All models are wrong, but some are useful* - George E. P. Box
