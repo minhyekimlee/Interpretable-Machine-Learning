@@ -19,7 +19,7 @@ Our group has developed interpretable machine learning models as a part of our s
 * Model date: June 2021
 * Model version: 1.0
 * Model Type: Explainable Boosting Machine (EBM)
-* Software: Python 3.6+, [InterpretML](https://github.com/interpretml/interpret).v0.2.5.
+* Software: Python 3.6+, [InterpretML](https://github.com/interpretml/interpret) v0.2.5.
 * Hyperparameters:
 {'max_bins': 512,
  'max_interaction_bins': 32,
