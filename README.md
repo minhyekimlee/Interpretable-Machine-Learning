@@ -50,18 +50,11 @@ Our group has developed interpretable machine learning models as a part of our s
 
 * Primary intended uses
   * The primary intended use is to provide an interpretable machine learning model that helps explain predictions as opposed to black box models which provide little, if any, explanation. Such transparency may help prevent bias and discrimination that can occur with black-box models as it relates to applicants with higher mortgage rates.
+  * Our project goal is to determine if the Annual Percentage Rate (APR) charged for a mortgage is high-priced or not, which we consider as one of many issues that perpetuates a massive disparity in overall wealth between different demographic groups in the US. As a result, a demographic factor such as race or sex was considered. We discovered black applicants are more likely to get high-priced mortgages.
 * Primary intended users
   * The primary intended users of this model are professors, students, and researchers of interpretable machine learning models.
 * Out-of-scope use cases
   * This model is for educational purposes and not intended to evaluate real-world credit worthiness.
-
-## Factors
-
-* Relevant factors
-  * Since our project goal is to determine if the Annual Percentage Rate (APR) charged for a mortgage is high-priced or not, which we consider as one of many issues that perpetuates a massive disparity in overall wealth between different demographic groups in the US. As a result, a demographic factor such as race or sex should be included. We discovered black applicants are more likely to get high-priced mortgages.
-  * From our common sense, a high-priced and long-period mortgage usually result in a comparatively higher APR (since the financial institutions are correspondingly taking on more risk), so we thought high-amount and long-period mortgage are two foreseeable salient factors that could make our model performance vary.
-* Evaluation factors
-  * According to our dataset, when high-priced mortgage is reported (shown as loan amount std), the reason is because it is a important feature of the mortgage. According to our feature importance, the loan amount is 4th importance toward our predictive object.
 
 ## Metrics
 
