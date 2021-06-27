@@ -63,15 +63,15 @@ Our group has developed interpretable machine learning models as a part of our s
 * Decision thresholds
   * Typically, an excellent model has AUC near to the 1 and a poor model has an AUC near 0, if a model's AUC is 0.5, it means the model has no class separation capacity. In our project, we didn't set decision thresholds of the AUC, but we select our best model (EBM), with the highest AUC which is **0.8247** (pre-remediation), or **0.8097** (post-remediation).
 * Variation approaches
-  * Our EBM model Grid search runs through 100 iterations
-  * We split our data by 70/30% training/validation
+  * Our EBM model random grid search runs through 500 iterations.
+  * We split our data by 70%/30% training/validation.
 
 ## Training Data
 * Datasets
   * Home Mortgage Disclosure Act ([HMDA](https://www.ffiec.gov/hmda/history2.htm)) aggregate lending data
 * Preprocessing
   * This data contains no major quality issues, so no preprocessing was required.
-  * The data was divided into training and validation data with random values in a shape of 70 (training):30 (evaluation).
+  * The data was divided into training and validation data with random values in a shape of 70 (training):30 (validation).
 * Data Shape
   * Training data rows = 112,253, columns = 23
   * Validation data rows = 48,085, columns = 23 
