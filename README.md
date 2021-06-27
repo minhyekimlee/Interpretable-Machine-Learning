@@ -71,7 +71,7 @@ Our group has developed interpretable machine learning models as a part of our s
   * Home Mortgage Disclosure Act ([HMDA](https://www.ffiec.gov/hmda/history2.htm)) aggregate lending data
 * Preprocessing
   * This data contains no major quality issues, so no preprocessing was required.
-  * The data was divided into training and validation data with random values in a shape of 70 (training):30 (evaluation).
+  * The data was divided into training and validation data with random values in a shape of 70 (training):30 (validation).
 * Data Shape
   * Training data rows = 112,253, columns = 23
   * Validation data rows = 48,085, columns = 23 
