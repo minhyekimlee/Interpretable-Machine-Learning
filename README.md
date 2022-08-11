@@ -4,7 +4,7 @@
 
 Students at the George Washington University School of Business
 * Zach Vila (zrvila)
-* Minhye Kim (minhyekimlee)
+* Minhye Kim (mkimh)
 * Tivon Johnson (tivonj)
 * Qunzhe Ding (dingqunzhe1222)
 
